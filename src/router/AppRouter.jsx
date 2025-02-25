@@ -7,9 +7,9 @@ import Contacto from './componentes/Contacto';
 const AppRouter = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home  " element={<Home />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
