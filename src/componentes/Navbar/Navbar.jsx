@@ -1,4 +1,4 @@
-import './Navbar.css'; // Archivo de estilos para la navbar
+import './Navbar.css'; 
 
 import { Link } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ export function Navbar () {
   return (
     <nav className='navbar'>
       <div className="navbarLogo">
-        <img src="/logo.png" alt="Logo" className= "logo" />
+        <img src="/vite.svg " alt="Logo" className= "logo" />
       </div>
       <ul className="navbarLinks">
         <li>
