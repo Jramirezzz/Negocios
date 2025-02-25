@@ -2,7 +2,7 @@ import './Navbar.css'; // Archivo de estilos para la navbar
 
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+export function Navbar () {
   return (
     <nav className='navbar'>
       <div className="navbarLogo">
@@ -16,11 +16,9 @@ const Navbar = () => {
           <Link to="/servicios" className="link">Servicios</Link>
         </li>
         <li>
-          <Link to="/contacto" className="link">Contacto</Link>
+          <Link to="/registrate" className="link">registrate</Link>
         </li>
       </ul>
     </nav>
   );
 };
-
-export default Navbar;
