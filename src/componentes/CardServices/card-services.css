@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Codec Cold';
+    src: url('../../assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Codec Cold';
+    src: url('../../assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+
+
+.card-services {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-text {
+    flex: 1;
+    padding-right: 20px; /* Espacio entre el texto y la imagen */
+  }
+  
+  .card-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .custom-image {
+    width: 548.67px;
+    height: 472px;
+  }
+  
+  h3 {
+    color: white;
+    font-size: 48px;
+    font-family: 'Codec Cold', sans-serif;
+    font-weight: bold;
+  }
+  
+  p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Codec Cold', sans-serif;
+    font-weight: normal;
+  
+  }

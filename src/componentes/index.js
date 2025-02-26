@@ -1,5 +1,6 @@
 export * from "./Buttons/Button"
 export * from "./Cards/Cards"
+export * from "./CardServices/card-services"
 export * from "./Footer/Footer"
 export * from "./Navbar/Navbar"
 export * from "./List/List"
