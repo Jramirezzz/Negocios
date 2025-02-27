@@ -22,22 +22,42 @@ export function Home() {
             <Button text="saber más" />
         </div>
 
-        <div className="imageContent">
+        <div className="imageContent-1">
             <img src="./About-image.png" alt="Imagen descriptiva" />
         </div>
     </div>
 </section>
-       <section>
-            <h2>
-                Más de 900,000 personas enfrentan problemas financieros por una mala administración.
+
+            <h2 className="subtitle">
+                <span className="first-part">
+                    Más de 900,000 personas   
+                </span>
+                <span className="second-part">
+                    enfrentan problemas financieros por una mala administración.
+                </span>
             </h2>
 
-            <h3>    
-                Somos tu guía hacia la libertad financiera.
+<section className="financialSection-2">
+    <div className="financialContent-2">
+        <div className="textContent-2">
+            
+            <h3>
+                <span className="first-part-2">
+                    Somos tu guía
+                </span>
+                <span className="second-part-2">
+                    hacia la libertad financiera.
+                </span>
+                 
             </h3>
-            <List/>
+            <List /> 
+        </div>
 
-       </section>
+        <div className="imageContent-2">
+            <img src="./Barras-img.png" alt="Imagen de finanzas" />
+        </div>
+    </div>
+</section>
        <section>
         <h2>
             Obten Concomientos Sobre
