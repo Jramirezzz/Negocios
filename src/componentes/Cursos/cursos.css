@@ -1,17 +1,16 @@
 @font-face {
-    font-family: 'Codec Cold';
-    src: url('../../assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Codec Cold';
-    src: url('../../assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-  }
-  
+  font-family: 'Codec Cold';
+  src: url('/assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Codec Cold';
+  src: url('/assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 .cursos-container {
     display: flex;
     align-items: flex-start;
@@ -23,7 +22,7 @@
   
   .cursos-text {
     flex: 1;
-    padding-right: 20px; /* Espacio entre el texto y la imagen */
+    padding-right: 20px; 
     font-family: 'Codec Cold', sans-serif;
     margin-top: 40px;
     margin-left: 40px;
@@ -37,15 +36,15 @@
   
   .extra-image {
     margin-top: 20px;
-    width: 2.2px; /* Ajusta el ancho */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 10px; /* Espacio entre la imagen extra y el texto */
+    width: 2.2px; 
+    height: auto; 
+    margin-right: 10px; 
   }
   
   .cursos-image {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* Alinea la imagen a la derecha */
+    justify-content: flex-end; 
     align-items: flex-start;
   }
   
@@ -67,44 +66,44 @@
   .cursos-text li {
     display: flex;
     align-items: center; 
-    margin-bottom: 40px; /* Espacio entre los elementos de la lista */
+    margin-bottom: 40px; 
     color: white;
     font-size: 20px;
     margin-left: 30px;
   }
   
   .cursos-text li img {
-    margin-right: 10px; /* Espacio entre el icono del check y el texto */
+    margin-right: 10px; 
   }
   
   .cursos-text h3 {
-    font-size: 24px; /* Tamaño del título */
-    color: white; /* Color del título */
+    font-size: 24px; 
+    color: white; 
     text-align: left;
   }
   
   .cursos-text h3 span {
-    color: #FFCE76; /* Color del texto "aprenderas:" */
+    color: #FFCE76; 
   }
 
   .button-container {
     display: flex;
-    justify-content: flex-start; /* Alinea el botón a la izquierda */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    justify-content: flex-start; 
+    width: 100%; 
   }
   
   .cursos-text button {
     background-color: #FFCE76; 
     color: #011F3F; 
-    border: 2px solid #011F3F; /* Agrega un borde al botón */
+    border: 2px solid #011F3F; 
     padding: 10px 20px;
     cursor: pointer;
-    width: 160px; /* Ancho del botón */
-    height: 42px; /* Altura del botón */
-    font-size: 16px; /* Ajusta el tamaño de la fuente */
-    border-radius: 30px; /* Border radius del botón */
-    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al botón */
-    margin-top: 20px; /* Espacio superior para separar el botón del contenido */
+    width: 160px; 
+    height: 42px; 
+    font-size: 16px; 
+    border-radius: 30px; 
+    font-family: 'Codec Cold', sans-serif; 
+    margin-top: 20px; 
   }
   
   .cursos-text button:hover {

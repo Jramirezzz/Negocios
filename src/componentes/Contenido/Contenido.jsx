@@ -75,12 +75,12 @@ export function Contenido({ title, subtitle, button, extraButton, img1, img2, im
       
       <div className="contenido-lists">
         {lists.map((list, index) => (
-          <div className="list-item" key={index} onClick={() => toggleCollapse(index)}>
+          <div className={`list-item ${collapsedIndex === index ? 'expanded' : 'collapsed'}`} key={index} onClick={() => toggleCollapse(index)}>
             <div className="list-header">
               <img src={img3} alt="icono" className="list-icon" />
               <div className="list-header-text">
                 <h4 className="list-title">{list.title}</h4>
-                {collapsedIndex !== index && <h5 className="list-subtitle">{list.subtitle}</h5>}
+                {collapsedIndex === index && <h5 className="list-subtitle">{list.subtitle}</h5>}
               </div>
             </div>
             {collapsedIndex === index && (
@@ -107,4 +107,4 @@ export function Contenido({ title, subtitle, button, extraButton, img1, img2, im
       </div>
     </div>
   );
-} 
+}
