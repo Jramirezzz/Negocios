@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Codec Cold';
+    src: url('../../assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Codec Cold';
+    src: url('../../assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+.cursos-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 40px;
+    
+  }
+  
+  .cursos-text {
+    flex: 1;
+    padding-right: 20px; /* Espacio entre el texto y la imagen */
+    font-family: 'Codec Cold', sans-serif;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  
+  .cursos-content {
+    display: flex;
+    align-items: flex-start;
+    
+  }
+  
+  .extra-image {
+    margin-top: 20px;
+    width: 2.2px; /* Ajusta el ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen extra y el texto */
+  }
+  
+  .cursos-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Alinea la imagen a la derecha */
+    align-items: flex-start;
+  }
+  
+  .cursos-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .check-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .cursos-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cursos-text li {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 40px; /* Espacio entre los elementos de la lista */
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  
+  .cursos-text li img {
+    margin-right: 10px; /* Espacio entre el icono del check y el texto */
+  }
+  
+  .cursos-text h3 {
+    font-size: 24px; /* Tamaño del título */
+    color: white; /* Color del título */
+    text-align: left;
+  }
+  
+  .cursos-text h3 span {
+    color: #FFCE76; /* Color del texto "aprenderas:" */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea el botón a la izquierda */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  }
+  
+  .cursos-text button {
+    background-color: #FFCE76; 
+    color: #011F3F; 
+    border: 2px solid #011F3F; /* Agrega un borde al botón */
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 160px; /* Ancho del botón */
+    height: 42px; /* Altura del botón */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    border-radius: 30px; /* Border radius del botón */
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al botón */
+    margin-top: 20px; /* Espacio superior para separar el botón del contenido */
+  }
+  
+  .cursos-text button:hover {
+    background-color: #e6b85e; 
+  }

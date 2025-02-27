@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Codec Cold';
+    src: url('../../assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Codec Cold';
+    src: url('../../assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+.contenido-container h2 {
+    color: #FFCE76; /* Color del título */
+    font-size: 40px; /* Tamaño del título */
+    text-align: left; /* Alineación a la izquierda */
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
+    font-weight: bold; /* Aplica el peso bold */
+  }
+  
+  .contenido-container h3 {
+    color: white; /* Color del subtítulo */
+    font-size: 24px; /* Tamaño del subtítulo */
+    text-align: left; /* Alineación a la izquierda */
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
+    font-weight: normal; /* Aplica el peso normal */
+    padding-right: 55%;
+    
+  }
+
+  .contenido-container .button-container {
+    display: flex;
+    align-items: flex-start; /* Alinea los botones a la izquierda */
+    gap: 20px;
+  }
+  
+
+  .contenido-container .main-button {
+    background-color: #FFCE76; /* Color de fondo del botón */
+    color: #011F3F; /* Color del texto del botón */
+    border: 2px solid #011F3F; /* Borde del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    width: 300px; /* Ancho del botón */
+    height: 42px; /* Altura del botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    border-radius: 30px; /* Radio del borde del botón */
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al botón */
+    margin-top: 20px; /* Espacio superior para separar el botón del contenido */
+  }
+  
+  .contenido-container .main-button:hover {
+    background-color: #e6b85e; /* Color de fondo del botón al pasar el cursor */
+  }
+  
+  .contenido-container .extra-button {
+    background-color: rgba(192, 192, 192, 0.46); /* Color de fondo del segundo botón con opacidad del 46% */
+    color: white; /* Color del texto del segundo botón */
+    border: 2px solid rgba(192, 192, 192, 0.46); /* Borde del segundo botón */
+    padding: 10px 20px; /* Espaciado interno del segundo botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el segundo botón */
+    width: 250px; /* Ancho del segundo botón */
+    height: 42px; /* Altura del segundo botón */
+    font-size: 16px; /* Tamaño de la fuente del segundo botón */
+    border-radius: 30px; /* Radio del borde del segundo botón */
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al segundo botón */
+    margin-top: 20px; /* Espacio superior para separar el segundo botón del contenido */
+  }
+  
+  .contenido-container .extra-button:hover {
+    background-color: rgba(192, 192, 192, 0.6); /* Color de fondo del segundo botón al pasar el cursor */
+  }
