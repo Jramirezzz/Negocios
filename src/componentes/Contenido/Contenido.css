@@ -1,74 +1,181 @@
 @font-face {
-    font-family: 'Codec Cold';
-    src: url('../../assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Codec Cold';
-    src: url('../../assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-  }
+  font-family: 'Codec Cold';
+  src: url('../../assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Codec Cold';
+  src: url('../../assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
 .contenido-container h2 {
-    color: #FFCE76; /* Color del título */
-    font-size: 40px; /* Tamaño del título */
-    text-align: left; /* Alineación a la izquierda */
-    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
-    font-weight: bold; /* Aplica el peso bold */
+  color: #FFCE76; /* Color del título */
+  font-size: 40px; /* Tamaño del título */
+  text-align: left; /* Alineación a la izquierda */
+  font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
+  font-weight: bold; /* Aplica el peso bold */
+}
+
+.contenido-container h3 {
+  color: white; /* Color del subtítulo */
+  font-size: 24px; /* Tamaño del subtítulo */
+  text-align: left; /* Alineación a la izquierda */
+  font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
+  font-weight: normal; /* Aplica el peso normal */
+  padding-right: 55%; /* Reduce el padding derecho para que ocupe tres líneas */
+}
+
+.contenido-container .button-container {
+  display: flex;
+  align-items: flex-start; /* Alinea los botones a la izquierda */
+  gap: 20px; /* Espaciado entre los botones */
+}
+
+.contenido-container .main-button {
+  background-color: #FFCE76; /* Color de fondo del botón */
+  color: #011F3F; /* Color del texto del botón */
+  border: 2px solid #011F3F; /* Borde del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  width: 300px; /* Ancho del botón */
+  height: 42px; /* Altura del botón */
+  font-size: 16px; /* Tamaño de la fuente del botón */
+  border-radius: 30px; /* Radio del borde del botón */
+  font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al botón */
+  margin-top: 20px; /* Espacio superior para separar el botón del contenido */
+}
+
+.contenido-container .main-button:hover {
+  background-color: #e6b85e; /* Color de fondo del botón al pasar el cursor */
+}
+
+.contenido-container .extra-button {
+  background-color: rgba(192, 192, 192, 0.46); /* Color de fondo del segundo botón con opacidad del 46% */
+  color: white; /* Color del texto del segundo botón */
+  border: 2px solid rgba(192, 192, 192, 0.46); /* Borde del segundo botón */
+  padding: 10px 20px; /* Espaciado interno del segundo botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el segundo botón */
+  width: 250px; /* Ancho del segundo botón */
+  height: 42px; /* Altura del segundo botón */
+  font-size: 16px; /* Tamaño de la fuente del segundo botón */
+  border-radius: 30px; /* Radio del borde del segundo botón */
+  font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al segundo botón */
+  margin-top: 20px; /* Espacio superior para separar el segundo botón del contenido */
+}
+
+.contenido-container .extra-button:hover {
+  background-color: rgba(192, 192, 192, 0.6); /* Color de fondo del segundo botón al pasar el cursor */
+}
+
+.contenido-container .imagenes-container {
+  display: flex;
+  align-items: flex-start; /* Alinea las imágenes a la izquierda */
+  gap: 20px; /* Espacio entre las imágenes */
+  margin-top: 25px; /* Espacio superior para separar las imágenes del contenido */
+}
+
+.contenido-container .linea-2 {
+  width: 72px; /* Ancho de la imagen 1 */
+  height: 3px; /* Altura de la imagen 1 */
+}
+
+.contenido-container .linea-3 {
+  width: 1140px; /* Ancho de la imagen 2 */
+  height: 3px; /* Altura de la imagen 2 */
+}
+
+.contenido-container .list-item {
+  margin-top: 1px; /* Espacio superior para separar la lista del contenido */
+}
+
+.contenido-container .list-header {
+  display: flex;
+  align-items: center; /* Alinea el icono y el título al centro */
+  gap: 10px; /* Espacio entre el icono y el título */
+  text-align: left; /* Alineación a la izquierda */
+}
+
+.contenido-container .list-icon {
+  width: 39px; /* Ancho del icono */
+  height: 39px; /* Altura del icono */
+  margin-top: -25px;
+}
+
+.contenido-container .list-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-container .list-title {
+  font-size: 32px; /* Tamaño del título de la lista */
+  font-weight: bold; /* Peso del título de la lista */
+  color: white; /* Color del título de la lista */
+  line-height: 39px; /* Alinea verticalmente el título con el icono */
+}
+
+.contenido-container .list-subtitle {
+  font-size: 18px; /* Tamaño del subtítulo de la lista */
+  font-weight: normal; /* Peso del subtítulo de la lista */
+  color: white; /* Color del subtítulo de la lista */
+  text-align: left; /* Alineación a la izquierda */
+  margin-left: 4px; /* Elimina el margen izquierdo */
+  margin-top: -30px
+}
+
+.contenido-container .list-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenido-container .list-text {
+  font-size: 18px; /* Tamaño del texto de la lista */
+  margin-top: 10px; /* Espacio superior del texto de la lista */
+  color: white; /* Color del texto */
+  margin-left: 55px; /* Espacio a la izquierda del texto */
+  max-width: 600px;
+  word-wrap: break-word;
+  line-height: 1.6;
+  font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al título 2 de la lista */ 
+  font-weight: normal;
+}
+
+.contenido-container .list-title2 {
+    font-size: 24px; /* Tamaño del título 2 de la lista */
+    font-weight: bold; /* Peso del título 2 de la lista */
+    color: white; /* Color del título 2 de la lista */
+    margin-top: 15px; /* Espacio superior del título 2 de la lista */
+    text-align: right; /* Alineación a la derecha */
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al título 2 de la lista */   
   }
   
-  .contenido-container h3 {
-    color: white; /* Color del subtítulo */
-    font-size: 24px; /* Tamaño del subtítulo */
-    text-align: left; /* Alineación a la izquierda */
-    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
-    font-weight: normal; /* Aplica el peso normal */
-    padding-right: 55%;
-    
-  }
-
-  .contenido-container .button-container {
+  .contenido-container .list-content {
     display: flex;
-    align-items: flex-start; /* Alinea los botones a la izquierda */
-    gap: 20px;
+    gap: 20px; /* Espacio entre las listas */
+    margin-top: 10px; /* Espacio superior para separar las listas del contenido */
+    justify-content: flex-end; /* Alinea las listas a la derecha */
   }
   
-
-  .contenido-container .main-button {
-    background-color: #FFCE76; /* Color de fondo del botón */
-    color: #011F3F; /* Color del texto del botón */
-    border: 2px solid #011F3F; /* Borde del botón */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    width: 300px; /* Ancho del botón */
-    height: 42px; /* Altura del botón */
-    font-size: 16px; /* Tamaño de la fuente del botón */
-    border-radius: 30px; /* Radio del borde del botón */
-    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al botón */
-    margin-top: 20px; /* Espacio superior para separar el botón del contenido */
+  .contenido-container .list-content ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
   }
   
-  .contenido-container .main-button:hover {
-    background-color: #e6b85e; /* Color de fondo del botón al pasar el cursor */
+  .contenido-container .list-content li {
+    display: flex;
+    align-items: center; /* Alinea los elementos de la lista al centro */
+    margin-bottom: 10px; /* Espacio inferior entre los elementos de la lista */
+    font-size: 18px; /* Tamaño del texto de la lista */
+    font-weight: normal; /* Peso del texto de la lista */
+    color: white; /* Color del texto de la lista */
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al texto de la lista */
   }
   
-  .contenido-container .extra-button {
-    background-color: rgba(192, 192, 192, 0.46); /* Color de fondo del segundo botón con opacidad del 46% */
-    color: white; /* Color del texto del segundo botón */
-    border: 2px solid rgba(192, 192, 192, 0.46); /* Borde del segundo botón */
-    padding: 10px 20px; /* Espaciado interno del segundo botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el segundo botón */
-    width: 250px; /* Ancho del segundo botón */
-    height: 42px; /* Altura del segundo botón */
-    font-size: 16px; /* Tamaño de la fuente del segundo botón */
-    border-radius: 30px; /* Radio del borde del segundo botón */
-    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al segundo botón */
-    margin-top: 20px; /* Espacio superior para separar el segundo botón del contenido */
-  }
-  
-  .contenido-container .extra-button:hover {
-    background-color: rgba(192, 192, 192, 0.6); /* Color de fondo del segundo botón al pasar el cursor */
+  .contenido-container .check-icon {
+    width: 26px; /* Ancho del icono de check */
+    height: 26px; /* Altura del icono de check */
+    margin-right: 10px; /* Espacio a la derecha del icono de check */
   }

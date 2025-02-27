@@ -94,16 +94,11 @@ export function Servicios () {
           subtitle="Descubre métodos prácticos para optimizar tus ingresos, reducir gastos innecesarios y construir un futuro financiero estable."
           button="Introducción a tus Finanzas"
           extraButton="Herramientas y recursos"
-          img1="/src/assets/Contenido1.png"
-          img2="/src/assets/Contenido2.png"
+          img1="/src/assets/Line 2.png"
+          img2="/src/assets/Line 3.png"
+          img3={"/src/assets/award.png"}
+          img4="/src/assets/book.png"
           lista1={listaContenido1}
-          lista2={listaContenido2}
-          lista3={listaContenido3}
-          lista4={listaContenido4}
-          lista5={listaContenido5}
-          lista6={listaContenido6}
-          lista7={listaContenido7}
-          lista8={listaContenido8}
         />
       </div>
 
