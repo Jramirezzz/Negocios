@@ -2,6 +2,7 @@ import { CardServices} from "../../componentes/CardServices/card-services"
 import {ComprarCursos} from "../../componentes/ComprarCurso/comprar-curso"
 import {Cursos} from "../../componentes/Cursos/cursos"
 import {Contenido} from "../../componentes/Contenido/Contenido"
+import { CardUsers } from "../../componentes/CardsUsers/cards-user"
 import "./Servicios.css"
 
 export function Servicios () {
@@ -58,6 +59,16 @@ export function Servicios () {
           img3={"/public/award.png"}
           img4="/public/book.png"
           lista1={listaContenido1}
+        />
+      </div>
+
+      <div>
+        <CardUsers
+          img1="/public/Line 4.png"
+          title="Nuestros profesores son expertos en la industria "
+          img2="/public/Alexandra Murillo.png"
+          title2="Alexandra Murillo"
+          subtitle="Economia y negocios internacionales"
         />
       </div>
 

@@ -89,16 +89,16 @@
 }
 
 .contenido-container .list-item {
-  margin-top: 20px; /* Aumenta el margen superior para separar las listas */
+  margin-top: 20px; 
   background-color: rgba(89, 105, 122, 0.11); 
   border-radius: 30px; 
   padding: 20px; 
   cursor: pointer; 
-  transition: padding 0.3s ease; /* Transición suave para el padding */
+  transition: padding 0.3s ease; 
 }
 
 .contenido-container .list-item.collapsed {
-  padding: 10px; /* Reduce el padding cuando la lista está colapsada */
+  padding: 10px; 
 }
 
 .contenido-container .list-header {

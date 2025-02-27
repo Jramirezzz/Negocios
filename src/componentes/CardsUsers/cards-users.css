@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Codec Cold';
+    src: url('/assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Codec Cold';
+    src: url('/assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .card-users-container {
+    display: flex;
+    flex-direction: column; /* Mantiene la dirección del contenedor a columna */
+    gap: 20px; /* Espacio entre los elementos */
+    margin-top: 40px;
+    background: linear-gradient(14deg, rgba(255, 206, 118, 0.4) 0%, rgba(1, 31, 63, 0.4) 100%); /* Fondo con gradiente lineal y opacidad del 40% */
+  }
+  
+  .card-users-text {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen y el título */
+    gap: 0px; /* Espacio entre la imagen y el título */
+    margin-top: 40px;
+  }
+  
+  .card-users-text .img1 {
+    width: 5px; /* Ancho de la imagen */
+    height: 4rem; /* Altura de la imagen */
+    margin-left: 40px;
+  }
+  
+  .card-users-text h3 {
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
+    color: white; /* Color del título */
+    font-size: 32px; /* Tamaño del título */
+    margin: 0; /* Elimina el margen del título */
+    max-width: 500px; /* Ancho máximo del texto */
+    word-wrap: break-word; /* Permite el ajuste de línea */
+    line-height: 1.5; /* Altura de línea */
+    margin-left: -35px;
+  }
+  
+  .card-users-cards-container {
+    display: flex;
+    flex-direction: row; /* Cambia la dirección del contenedor a fila */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-left: 55px;
+  }
+  
+  .card-users-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+    align-self: flex-start; /* Alinea la tarjeta a la izquierda */
+    background-color: #011F3F; /* Fondo de la tarjeta */
+    border-top-left-radius: 30px; /* Esquina superior izquierda redondeada */
+    border-top-right-radius: 30px; /* Esquina superior derecha redondeada */
+    border-bottom-left-radius: 16px; /* Esquina inferior izquierda redondeada */
+    border-bottom-right-radius: 16px; /* Esquina inferior derecha redondeada */
+    padding-bottom: 30px; /* Alarga la parte inferior */    
+    margin-left: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(255, 206, 118, 0.4), 0 4px 8px rgba(1, 31, 63, 0.4); /* Sombra con el color de fondo de la sección */
+  }
+  
+  .card-users-card .img2 {
+    width: 321px; /* Ancho de la imagen 2 */
+    height: 275px; /* Altura de la imagen 2 */
+    border-top-left-radius: 30px; /* Esquina superior izquierda redondeada */
+    border-top-right-radius: 30px; /* Esquina superior derecha redondeada */
+    border-bottom-left-radius: 0; /* Esquina inferior izquierda sin redondear */
+    border-bottom-right-radius: 0; /* Esquina inferior derecha sin redondear */
+  }
+  
+  .card-users-card h3.title2 {
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
+    color: white; /* Color del título */
+    font-size: 20px; /* Tamaño del título */
+    margin: 10px 0 5px 0; /* Margen superior e inferior */
+  }
+  
+  .card-users-card h3.subtitle {
+    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
+    color: white; /* Color del subtítulo */
+    font-size: 14px; /* Tamaño del subtítulo */
+    margin: 0; /* Elimina el margen */
+    max-width: 200px;
+    word-wrap: break-word; /* Permite el ajuste de línea */
+    line-height: 1.5; /* Altura de línea */
+  }
