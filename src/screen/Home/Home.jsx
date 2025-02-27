@@ -52,19 +52,21 @@ export function Home() {
             </h3>
             <List /> 
         </div>
-
         <div className="imageContent-2">
             <img src="./Barras-img.png" alt="Imagen de finanzas" />
         </div>
     </div>
 </section>
+
        <section>
         <h2>
             Obten Concomientos Sobre
         </h2>
-            <Cards title="Domina Tu Portafolio Bancario" description="Tipos de cuentas,tarjetas y productos financieros que necesitas" img="./vite.svg"/>
-            <Cards title="Declaración De Renta Para Principiantes" description="Aprende a declarar sin miedo y optimizar tus impuestos" img="./vite.svg"/>
-            <Cards title="Gestionar Tu Salario Como Un Experto" description="Presupuestos,gastos y planificacion financiera" img="./vite.svg"/>
+            <div className="cards-container">
+                <Cards title="Domina Tu Portafolio Bancario" description="Tipos de cuentas,tarjetas y productos financieros que necesitas" img="./vite.svg"/>
+                <Cards title="Declaración De Renta Para Principiantes" description="Aprende a declarar sin miedo y optimizar tus impuestos" img="./vite.svg"/>
+                <Cards title="Gestionar Tu Salario Como Un Experto" description="Presupuestos,gastos y planificacion financiera" img="./vite.svg"/>
+            </div>
        </section>
 
        <section>
