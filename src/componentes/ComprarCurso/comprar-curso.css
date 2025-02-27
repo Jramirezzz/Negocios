@@ -4,55 +4,41 @@
     font-weight: normal;
     font-style: normal;
   }
-
+  
   @font-face {
     font-family: 'Codec Cold';
     src: url('../../assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
   }
-  
 
-
-.card-services {
+.comprar-curso-card {
+    background-color: white; 
+    color: black; 
+    padding: 20px;
     display: flex;
     align-items: center;
-  }
-  
-  .card-text {
-    flex: 1;
-    padding-right: 20px; 
-  }
-  
-  .card-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .card-image img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .custom-image {
-    width: 548.67px;
-    height: 472px;
-  }
-  
-  h1 {
-    color: white;
-    font-size: 48px;
+    justify-content: space-between; 
+    margin-top: 40px;
+    margin-left: 0;
     font-family: 'Codec Cold', sans-serif;
     font-weight: bold;
-    text-align: left;
   }
   
-  p {
-    color: white;
-    font-size: 18px;
+  .comprar-curso-button {
+    background-color: #FFCE76; 
+    color: #011F3F; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 306px;
+    height: 67px;
+    font-size: 22px;
+    border-radius: 16px;
     font-family: 'Codec Cold', sans-serif;
     font-weight: normal;
-    text-align: left;
+  }
   
+  .comprar-curso-button:hover {
+    background-color: #e6b85e; 
   }
