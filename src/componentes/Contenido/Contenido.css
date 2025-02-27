@@ -89,7 +89,11 @@
 }
 
 .contenido-container .list-item {
-  margin-top: 1px; /* Espacio superior para separar la lista del contenido */
+  margin-top: 40px; /* Espacio superior para separar la lista del contenido */
+  background-color: rgba(89, 105, 122, 0.11); /* Fondo con color #59697A y 11% de opacidad */
+  border-radius: 30px; /* Borde redondeado de 30px */
+  padding: 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la lista */
 }
 
 .contenido-container .list-header {
@@ -102,7 +106,6 @@
 .contenido-container .list-icon {
   width: 39px; /* Ancho del icono */
   height: 39px; /* Altura del icono */
-  margin-top: -25px;
 }
 
 .contenido-container .list-header-text {
@@ -128,7 +131,17 @@
 
 .contenido-container .list-details {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contenido-container .list-details .left {
+  width: 65%;
+}
+
+.contenido-container .list-details .right {
+  width: 30%;
 }
 
 .contenido-container .list-text {
@@ -136,46 +149,44 @@
   margin-top: 10px; /* Espacio superior del texto de la lista */
   color: white; /* Color del texto */
   margin-left: 55px; /* Espacio a la izquierda del texto */
-  max-width: 600px;
-  word-wrap: break-word;
-  line-height: 1.6;
-  font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al título 2 de la lista */ 
-  font-weight: normal;
+  max-width: 600px; /* Ancho máximo del texto */
+  word-wrap: break-word; /* Permite que las palabras se dividan para ajustarse al ancho */
+  line-height: 1.5; /* Altura de línea para ajustar el texto */
 }
 
 .contenido-container .list-title2 {
-    font-size: 24px; /* Tamaño del título 2 de la lista */
-    font-weight: bold; /* Peso del título 2 de la lista */
-    color: white; /* Color del título 2 de la lista */
-    margin-top: 15px; /* Espacio superior del título 2 de la lista */
-    text-align: right; /* Alineación a la derecha */
-    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al título 2 de la lista */   
-  }
-  
-  .contenido-container .list-content {
-    display: flex;
-    gap: 20px; /* Espacio entre las listas */
-    margin-top: 10px; /* Espacio superior para separar las listas del contenido */
-    justify-content: flex-end; /* Alinea las listas a la derecha */
-  }
-  
-  .contenido-container .list-content ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding de la lista */
-  }
-  
-  .contenido-container .list-content li {
-    display: flex;
-    align-items: center; /* Alinea los elementos de la lista al centro */
-    margin-bottom: 10px; /* Espacio inferior entre los elementos de la lista */
-    font-size: 18px; /* Tamaño del texto de la lista */
-    font-weight: normal; /* Peso del texto de la lista */
-    color: white; /* Color del texto de la lista */
-    font-family: 'Codec Cold', sans-serif; /* Aplica la fuente al texto de la lista */
-  }
-  
-  .contenido-container .check-icon {
-    width: 26px; /* Ancho del icono de check */
-    height: 26px; /* Altura del icono de check */
-    margin-right: 10px; /* Espacio a la derecha del icono de check */
-  }
+  font-size: 24px; /* Tamaño del título 2 de la lista */
+  font-weight: bold; /* Peso del título 2 de la lista */
+  color: white; /* Color del título 2 de la lista */
+  font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
+  margin-top: 15px; /* Espacio superior del título 2 de la lista */
+  text-align: left; /* Alineación a la izquierda */
+}
+
+.contenido-container .list-content {
+  display: flex;
+  flex-direction: column; /* Cambia a columna para que las listas estén debajo del título */
+  gap: 5px; /* Reduce el espacio entre las listas */
+  margin-top: 5px; /* Reduce el espacio superior para acercar las listas al título */
+}
+
+.contenido-container .list-content ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding de la lista */
+}
+
+.contenido-container .list-content li {
+  display: flex;
+  align-items: center; /* Alinea los elementos de la lista al centro */
+  margin-bottom: 10px; /* Espacio inferior entre los elementos de la lista */
+  font-size: 18px; /* Tamaño del texto de la lista */
+  font-weight: normal; /* Peso del texto de la lista */
+  color: white; /* Color del texto de la lista */
+  font-family: 'Codec Cold', sans-serif; /* Aplica la fuente */
+}
+
+.contenido-container .check-icon {
+  width: 26px; /* Ancho del icono de check */
+  height: 26px; /* Altura del icono de check */
+  margin-right: 10px; /* Espacio a la derecha del icono de check */
+}
