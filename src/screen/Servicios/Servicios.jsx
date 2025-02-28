@@ -2,6 +2,7 @@ import { CardServices} from "../../componentes/CardServices/card-services"
 import {ComprarCursos} from "../../componentes/ComprarCurso/comprar-curso"
 import {Cursos} from "../../componentes/Cursos/cursos"
 import {Contenido} from "../../componentes/Contenido/Contenido"
+import { CardUsers } from "../../componentes/CardsUsers/cards-user"
 import "./Servicios.css"
 
 export function Servicios () {
@@ -19,47 +20,6 @@ export function Servicios () {
     "Contenido 1 - Item 3"
   ];
 
-  const listaContenido2 = [
-    "Contenido 2 - Item 1",
-    "Contenido 2 - Item 2",
-    "Contenido 2 - Item 3"
-  ];
-
-  const listaContenido3 = [
-    "Contenido 3 - Item 1",
-    "Contenido 3 - Item 2",
-    "Contenido 3 - Item 3"
-  ];
-
-  const listaContenido4 = [
-    "Contenido 4 - Item 1",
-    "Contenido 4 - Item 2",
-    "Contenido 4 - Item 3"
-  ];
-
-  const listaContenido5 = [
-    "Contenido 5 - Item 1",
-    "Contenido 5 - Item 2",
-    "Contenido 5 - Item 3"
-  ];
-
-  const listaContenido6 = [
-    "Contenido 6 - Item 1",
-    "Contenido 6 - Item 2",
-    "Contenido 6 - Item 3"
-  ];
-
-  const listaContenido7 = [
-    "Contenido 7 - Item 1",
-    "Contenido 7 - Item 2",
-    "Contenido 7 - Item 3"
-  ];
-
-  const listaContenido8 = [
-    "Contenido 8 - Item 1",
-    "Contenido 8 - Item 2",
-    "Contenido 8 - Item 3"
-  ];
 
 
   return (
@@ -68,7 +28,7 @@ export function Servicios () {
         <CardServices 
           title="¡Aprende a administrar tu salario como un experto!" 
           description="Ahorrar dinero no significa dejar de disfrutar, sino aprender a gestionar mejor tus ingresos. En este curso descubrirás cómo transformar tus hábitos financieros para construir un futuro estable y sin preocupaciones. Te ayudaremos a tomar el control de tu dinero, optimizar tus recursos y desarrollar una mentalidad financiera inteligente que te permitirá alcanzar tus metas sin sentir que sacrificas tu día a día." 
-          img="/src/assets/Empresario.png"
+          img="/public/Empresario.png"
         />
       </div>
       <div>
@@ -80,11 +40,11 @@ export function Servicios () {
 
       <div>
         <Cursos
-          extraImg="/src/assets/Line.png"
+          extraImg="/public/Line.png"
           title="En este curso "
           lista={listaCursos}
           button="Ver temerario"
-          img="/src/assets/Video.png"
+          img="/public/Video.png"
         />
       </div>
 
@@ -94,11 +54,21 @@ export function Servicios () {
           subtitle="Descubre métodos prácticos para optimizar tus ingresos, reducir gastos innecesarios y construir un futuro financiero estable."
           button="Introducción a tus Finanzas"
           extraButton="Herramientas y recursos"
-          img1="/src/assets/Line 2.png"
-          img2="/src/assets/Line 3.png"
-          img3={"/src/assets/award.png"}
-          img4="/src/assets/book.png"
+          img1="/public/Line 2.png"
+          img2="/public/Line 3.png"
+          img3={"/public/award.png"}
+          img4="/public/book.png"
           lista1={listaContenido1}
+        />
+      </div>
+
+      <div>
+        <CardUsers
+          img1="/public/Line 4.png"
+          title="Nuestros profesores son expertos en la industria "
+          img2="/public/Alexandra Murillo.png"
+          title2="Alexandra Murillo"
+          subtitle="Economia y negocios internacionales"
         />
       </div>
 
