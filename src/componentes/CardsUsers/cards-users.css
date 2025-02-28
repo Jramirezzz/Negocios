@@ -47,8 +47,8 @@
   .card-users-cards-container {
     display: flex;
     flex-direction: row; 
-    gap: 20px; 
-    margin-left: 55px;
+    gap: 170px; 
+    margin-left: 70px;
   }
   
   .card-users-card {
