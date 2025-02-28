@@ -63,9 +63,9 @@ export function Home() {
             Obten Concomientos Sobre
         </h2>
             <div className="cards-container">
-                <Cards title="Domina Tu Portafolio Bancario" description="Tipos de cuentas,tarjetas y productos financieros que necesitas" img="./vite.svg"/>
-                <Cards title="Declaración De Renta Para Principiantes" description="Aprende a declarar sin miedo y optimizar tus impuestos" img="./vite.svg"/>
-                <Cards title="Gestionar Tu Salario Como Un Experto" description="Presupuestos,gastos y planificacion financiera" img="./vite.svg"/>
+                <Cards title="Domina Tu Portafolio Bancario" description="Tipos de cuentas,tarjetas y productos financieros que necesitas" img="./Cover1.png"/>
+                <Cards title="Declaración De Renta Para Principiantes" description="Aprende a declarar sin miedo y optimizar tus impuestos" img="./Cover2.png"/>
+                <Cards title="Gestionar Tu Salario Como Un Experto" description="Presupuestos,gastos y planificacion financiera" img="./Cover3.png"/>
             </div>
        </section>
 
