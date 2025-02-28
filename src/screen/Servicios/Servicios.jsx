@@ -6,9 +6,11 @@ import {ComprarCursos} from "../../componentes/ComprarCurso/comprar-curso"
 import {Cursos} from "../../componentes/Cursos/cursos"
 import {Contenido} from "../../componentes/Contenido/Contenido"
 import { CardUsers } from "../../componentes/CardsUsers/cards-user"
+
 import "./Servicios.css"
 
 export function Servicios () {
+  
 
   useEffect(() => {
     logEvent(analytics, "pagina_visitada", {
