@@ -30,7 +30,8 @@
   .card-users-text .img1 {
     width: 5px; 
     height: 4rem; 
-    margin-left: 40px;
+    margin-left: 50px;
+
   }
   
   .card-users-text h3 {
@@ -48,7 +49,7 @@
     display: flex;
     flex-direction: row; 
     gap: 170px; 
-    margin-left: 70px;
+    margin-left: 30px;
   }
   
   .card-users-card {
@@ -63,7 +64,6 @@
     border-bottom-left-radius: 16px; 
     border-bottom-right-radius: 16px; 
     padding-bottom: 30px;   
-    margin-left: 40px;
     margin-bottom: 40px;
     box-shadow: 0 4px 8px rgba(255, 206, 118, 0.4), 0 4px 8px rgba(1, 31, 63, 0.4); 
   }
