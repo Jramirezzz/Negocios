@@ -1,3 +1,6 @@
+import { logEvent} from "firebase/analytics";
+import { useEffect } from "react";
+import { analytics } from "../../Firebase/firebase";
 import { CardServices} from "../../componentes/CardServices/card-services"
 import {ComprarCursos} from "../../componentes/ComprarCurso/comprar-curso"
 import {Cursos} from "../../componentes/Cursos/cursos"
@@ -6,6 +9,30 @@ import { CardUsers } from "../../componentes/CardsUsers/cards-user"
 import "./Servicios.css"
 
 export function Servicios () {
+
+  useEffect(() => {
+    logEvent(analytics, "pagina_visitada", {
+      pagina: "Servicios",
+    });
+  }, []);
+
+  // Rastrea el tiempo de permanencia en la página
+  useEffect(() => {
+    const startTime = Date.now(); // Registra el tiempo de inicio
+
+    return () => {
+      const endTime = Date.now(); // Registra el tiempo de salida
+      const timeSpent = (endTime - startTime) / 1000; // Calcula el tiempo en segundos
+
+      // Rastrea el tiempo de permanencia en la página
+      logEvent(analytics, "tiempo_pagina", {
+        pagina: "Servicios",
+        tiempo_segundos: timeSpent,
+      });
+    };
+  }, []);
+
+  
 
   const listaCursos = [
     "Cómo hacer un presupuesto sin fallar en el intento",

@@ -1,78 +1,123 @@
+/* Estilos generales para la sección del formulario */
 .formSection {
-    display: flex;
-    width: 100%;
-  }
+  display: flex;
+  height: 90vh;
+  background-color: #ffffff; /* Fondo claro para la sección */
+}
+
+/* Mitad de la imagen */
+.imageHalf {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imageHalf img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0;
+}
+
+/* Mitad del formulario */
+.formHalf {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #ffffff; /* Fondo blanco para el formulario */
+}
+
+/* Título del formulario */
+.formHalf h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Grupos de campos del formulario */
+.formGroup {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
   
+}
+
+/* Labels */
+.formGroup label {
+  display: block;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-align: left; /* Alinea el texto del label a la izquierda */
+}
+
+/* Inputs */
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 5px;
+  background-color: transparent; /* Fondo transparente */
+  outline: none; /* Elimina el borde predeterminado al enfocar */
+  color: #011F3F; /* Color del texto */
+
+}
+
+/* Efecto al enfocar el input */
+.formGroup input:focus {
+  border-color: #429ffd; /* Cambia el color del borde al enfocar */
+}
+
+/* Botón de enviar */
+button {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #429ffd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+button:hover {
+  background-color: #3182ce;
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .formSection {
+    flex-direction: column; /* Apila la imagen y el formulario verticalmente */
+    height: auto;
+  }
+
   .imageHalf {
-    flex: 1;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    height: 300px; /* Altura fija para la imagen en móviles */
   }
-  
-  .imageHalf img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-  }
-  
+
   .formHalf {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem; 
-    background-color: #fff;
+    padding: 1rem; /* Reduce el padding en móviles */
   }
-  
+
   .formHalf h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem; /* Reduce el tamaño del título */
   }
-  
-  .formGroup {
-    width: 100%;
-    max-width: 400px; /* Ancho máximo del formulario */
-    margin-bottom: 1rem;
-  }
-  
-  .formGroup label {
-    display: block;
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-  }
-  
+
   .formGroup input {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0.5rem; /* Reduce el padding de los inputs */
   }
-  
-  .formGroup input:focus {
-    outline: none;
-    border-color: #429ffd; /* Cambia el color del borde al enfocar */
-  }
-  
+
   button {
-    width: 100%;
-    max-width: 400px;
-    padding: 0.75rem;
-    font-size: 1rem;
-    background-color: #429ffd;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1rem;
+    padding: 0.5rem; /* Reduce el padding del botón */
   }
-  
-  button:hover {
-    background-color: #3182ce; /* Cambia el color al pasar el mouse */
-  }
+}

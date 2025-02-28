@@ -1,6 +1,56 @@
+import { logEvent, setAnalyticsCollectionEnabled} from "firebase/analytics";
+import { analytics } from "../../Firebase/firebase";
+import { useEffect } from "react";
 import { Button,List,Cards,Footer} from "../../componentes/index";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
+
+// Habilitar el modo de depuración
+setAnalyticsCollectionEnabled(analytics, true);
+
+
 export function Home() {
+    const navigate = useNavigate();
+    
+    useEffect(() => {
+       
+        logEvent(analytics, 'screen_view', {
+          firebase_screen: "Home", 
+          firebase_screen_class: "HomeScreen", 
+        });
+      }, []);
+
+      useEffect(() => {
+        const startTime = Date.now(); // Registra el tiempo de inicio
+    
+        return () => {
+          const endTime = Date.now(); // Registra el tiempo de salida
+          const timeSpent = (endTime - startTime) / 1000; // Calcula el tiempo en segundos
+    
+          // Rastrea el tiempo de permanencia en la página
+          logEvent(analytics, "tiempo_pagina", {
+            pagina: "Home",
+            tiempo_segundos: timeSpent,
+          });
+        };
+      }, []);
+      
+
+      const handleClickSaberMas = () => {
+        console.log("Clic en 'saber más'");
+        logEvent(analytics, "Saber mas", { button: "saber_mas" });
+        navigate("/servicios");
+      };
+      
+      logEvent(analytics, "prueba_evento", {
+        mensaje: "Este es un evento de prueba",
+      });
+      const handleClickRegistrate = () => {
+        console.log("Clic en 'Registrate'");
+        logEvent(analytics, "Registrate", { button: "registrate" });
+        navigate("/registrate");
+      };
+
   return (
     <div>
         <section className="header">
@@ -18,8 +68,12 @@ export function Home() {
             <p className="aboutDescription-1">
                 Toma el control de tus finanzas con la guía de nuestros expertos. Te ayudamos a administrar tu dinero de forma inteligente para que alcances tus metas y tomes decisiones financieras con confianza.
             </p>
+            <button onClick={handleClickSaberMas} className="aboutButton">
+                saber más
+            </button>
 
-            <Button text="saber más" />
+
+            
         </div>
 
         <div className="imageContent-1">
@@ -80,7 +134,10 @@ export function Home() {
                 Suscribete y aprende a ahorrar, invertir y tomar decisiones financieras inteligente.
             </p>
 
-            <Button text="Registrate" />
+            <button onClick={handleClickRegistrate} className="aboutButton-3">
+                Registrate
+            </button>
+
         </div>
 
         <div className="imageContent-1">
