@@ -42,7 +42,7 @@
     margin-bottom: 1rem;
 }
 
-.aboutDescription {
+.aboutDescription-1 {
     font-size: 1rem;
     color: black;
     margin-bottom: 2rem;
@@ -140,5 +140,32 @@ Button:hover {
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
+}
+.aboutTitle-3{
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: start;
+}
+.aboutDescription-3{
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 2rem;
 
+}
+.about-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+.subtitle-2{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
 }

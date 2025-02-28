@@ -15,7 +15,7 @@ export function Home() {
                 Crece con nosotros y alcanza tus metas.
             </h3>
 
-            <p className="aboutDescription">
+            <p className="aboutDescription-1">
                 Toma el control de tus finanzas con la guía de nuestros expertos. Te ayudamos a administrar tu dinero de forma inteligente para que alcances tus metas y tomes decisiones financieras con confianza.
             </p>
 
@@ -59,7 +59,7 @@ export function Home() {
 </section>
 
        <section>
-        <h2>
+        <h2 className="subtitle-2">
             Obten Concomientos Sobre
         </h2>
             <div className="cards-container">
@@ -69,17 +69,25 @@ export function Home() {
             </div>
        </section>
 
-       <section>
-        <img src="./vite.svg" alt="" />
-        <h2>
-            El Dinero No Viene Con Manual... Pero Nosotros Te Damos Uno.
-        </h2>
-        <p>
-            Suscribete Y aprende a ahorrar, invertir y tomar decisiones financieras inteligentes.
-        </p>
-       </section>
-         <Footer/>
+       <section className="about-3">
+    <div className="aboutContent">
+        <div className="textContent">
+            <h3 className="aboutTitle-3">
+                El dinero no viene con manual... pero nosotros te damos uno.
+            </h3>
 
+            <p className="aboutDescription-3">
+                Suscribete y aprende a ahorrar, invertir y tomar decisiones financieras inteligente.
+            </p>
+
+            <Button text="Registrate" />
+        </div>
+
+        <div className="imageContent-1">
+            <img src="./Trading.png" alt="Imagen descriptiva" />
+        </div>
+    </div>
+</section>
     </div>
   )
 }
