@@ -16,6 +16,7 @@
 .card-services {
     display: flex;
     align-items: center;
+    margin-left: 40px;
   }
   
   .card-text {
@@ -45,13 +46,20 @@
     font-family: 'Codec Cold', sans-serif;
     font-weight: bold;
     text-align: left;
+    max-width: 550px; 
+    word-wrap: break-word; 
+    line-height: 1.5; 
+
   }
   
   p {
     color: white;
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'Codec Cold', sans-serif;
     font-weight: normal;
     text-align: left;
+    max-width: 550px; 
+    word-wrap: break-word; 
+    line-height: 1.5; 
   
   }
