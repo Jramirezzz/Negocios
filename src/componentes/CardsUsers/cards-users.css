@@ -93,3 +93,179 @@
     word-wrap: break-word; 
     line-height: 1.5; 
   }
+
+
+  @media (max-width: 768px) {
+    .card-users-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Aumenta el espacio entre elementos */
+      margin-top: 30px; /* Aumenta el margen superior */
+      background: linear-gradient(14deg, rgba(255, 206, 118, 0.4) 0%, rgba(1, 31, 63, 0.4) 100%);
+      padding: 20px; /* Aumenta el padding para un mejor espaciado */
+    }
+  
+    .card-users-text {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Aumenta el espacio entre elementos */
+      margin-top: 20px; /* Aumenta el margen superior */
+    }
+  
+    .card-users-text .img1 {
+      width: 10px; /* Aumenta el ancho de la imagen */
+      height: 4rem; /* Aumenta la altura de la imagen */
+      margin-left: 20px; /* Aumenta el margen izquierdo */
+    }
+  
+    .card-users-text h3 {
+      font-family: 'Codec Cold', sans-serif;
+      color: white;
+      font-size: 24px; /* Aumenta el tamaño de la fuente */
+      margin: 0;
+      max-width: 100%; /* Ajusta el ancho máximo */
+      word-wrap: break-word;
+      line-height: 1.5;
+      text-align: left; /* Alinea el texto a la izquierda */
+      margin-left: 20px; /* Aumenta el margen izquierdo */
+    }
+  
+    .card-users-cards-container {
+      display: flex;
+      flex-direction: row; /* Coloca las tarjetas en una fila */
+      gap: 20px; /* Aumenta el espacio entre las tarjetas */
+      margin-left: 20px; /* Aumenta el margen izquierdo */
+      justify-content: center; /* Centra las tarjetas */
+      flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si no caben */
+    }
+  
+    .card-users-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #011f3f;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      padding-bottom: 30px; /* Aumenta el padding inferior */
+      margin-bottom: 20px; /* Aumenta el margen inferior */
+      box-shadow: 0 4px 8px rgba(255, 206, 118, 0.4), 0 4px 8px rgba(1, 31, 63, 0.4);
+      width: 45%; /* Ajusta el ancho de las tarjetas */
+      max-width: 350px; /* Aumenta el ancho máximo de las tarjetas */
+    }
+  
+    .card-users-card .img2 {
+      width: 100%; /* Ajusta el ancho de la imagen */
+      height: auto; /* Mantiene la proporción de la imagen */
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  
+    .card-users-card h3.title2 {
+      font-family: 'Codec Cold', sans-serif;
+      color: white;
+      font-size: 18px; /* Aumenta el tamaño de la fuente */
+      margin: 15px 0 10px 0; /* Aumenta el margen */
+    }
+  
+    .card-users-card h3.subtitle {
+      font-family: 'Codec Cold', sans-serif;
+      color: white;
+      font-size: 14px; /* Aumenta el tamaño de la fuente */
+      margin: 0;
+      max-width: 250px; /* Aumenta el ancho máximo */
+      word-wrap: break-word;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 480px) {
+    .card-users-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; /* Reduce el espacio entre elementos */
+      margin-top: 20px; /* Reduce el margen superior */
+      background: linear-gradient(14deg, rgba(255, 206, 118, 0.4) 0%, rgba(1, 31, 63, 0.4) 100%);
+      padding: 10px; /* Añade padding para evitar que el contenido toque los bordes */
+    }
+  
+    .card-users-text {
+      display: flex;
+      align-items: center;
+      gap: 0px;
+      margin-top: 10px; /* Reduce el margen superior */
+    }
+  
+    .card-users-text .img1 {
+      width: 5px;
+      height: 3rem; /* Reduce la altura de la imagen */
+      margin-left: 10px; /* Reduce el margen izquierdo */
+    }
+  
+    .card-users-text h3 {
+      font-family: 'Codec Cold', sans-serif;
+      color: white;
+      font-size: 18px; /* Reduce el tamaño de la fuente */
+      margin: 0;
+      max-width: 100%; /* Ajusta el ancho máximo */
+      word-wrap: break-word;
+      line-height: 1.5;
+      text-align: left; /* Alinea el texto a la izquierda */
+      margin-left: 10px;
+    }
+  
+    .card-users-cards-container {
+      display: flex;
+      flex-direction: row; /* Coloca las tarjetas en una fila */
+      gap: 10px; /* Reduce el espacio entre las tarjetas */
+      margin-left: 10px; /* Reduce el margen izquierdo */
+      justify-content: center; /* Centra las tarjetas */
+      flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si no caben */
+    }
+  
+    .card-users-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #011f3f;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      padding-bottom: 20px; /* Reduce el padding inferior */
+      margin-bottom: 10px; /* Reduce el margen inferior */
+      box-shadow: 0 4px 8px rgba(255, 206, 118, 0.4), 0 4px 8px rgba(1, 31, 63, 0.4);
+      width: 48%; /* Ajusta el ancho de las tarjetas */
+      max-width: 300px; /* Limita el ancho máximo de las tarjetas */
+    }
+  
+    .card-users-card .img2 {
+      width: 100%; /* Ajusta el ancho de la imagen */
+      height: auto; /* Mantiene la proporción de la imagen */
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  
+    .card-users-card h3.title2 {
+      font-family: 'Codec Cold', sans-serif;
+      color: white;
+      font-size: 14px; /* Ajusta el tamaño de la fuente */
+      margin: 10px 0 5px 0;
+    }
+  
+    .card-users-card h3.subtitle {
+      font-family: 'Codec Cold', sans-serif;
+      color: white;
+      font-size: 10px; /* Ajusta el tamaño de la fuente */
+      margin: 0;
+      max-width: 200px;
+      word-wrap: break-word;
+      line-height: 1.5;
+    }
+  }
