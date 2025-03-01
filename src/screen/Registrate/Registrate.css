@@ -45,7 +45,6 @@
   width: 100%;
   max-width: 400px;
   margin-bottom: 1.5rem;
-  
 }
 
 /* Labels */
@@ -67,7 +66,6 @@
   background-color: transparent; /* Fondo transparente */
   outline: none; /* Elimina el borde predeterminado al enfocar */
   color: #011F3F; /* Color del texto */
-
 }
 
 /* Efecto al enfocar el input */
@@ -94,7 +92,7 @@ button:hover {
   background-color: #3182ce;
 }
 
-/* Estilos responsive para pantallas pequeñas */
+/* Estilos responsive para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
   .formSection {
     flex-direction: column; /* Apila la imagen y el formulario verticalmente */
@@ -102,15 +100,20 @@ button:hover {
   }
 
   .imageHalf {
-    height: 300px; /* Altura fija para la imagen en móviles */
+    height: 200px; /* Altura fija para la imagen en móviles */
+  }
+
+  .imageHalf img {
+    display: none;
   }
 
   .formHalf {
-    padding: 1rem; /* Reduce el padding en móviles */
+    margin-top: 70%;
+    padding: 1.5rem;
   }
 
   .formHalf h2 {
-    font-size: 1.5rem; /* Reduce el tamaño del título */
+    font-size: 1.75rem; /* Reduce el tamaño del título */
   }
 
   .formGroup input {
@@ -119,5 +122,34 @@ button:hover {
 
   button {
     padding: 0.5rem; /* Reduce el padding del botón */
+  }
+}
+
+/* Estilos responsive para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .formSection {
+    height: 80vh; /* Ajusta la altura para tablets */
+  }
+
+  .imageHalf img {
+display: none;  }
+
+  .formHalf {
+    padding: 1.5rem; /* Ajusta el padding para tablets */
+  }
+
+  .formHalf h2 {
+    font-size: 1.75rem; /* Ajusta el tamaño del título */
+  }
+}
+
+/* Estilos responsive para pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+  .formSection {
+    height: 90vh; /* Mantén la altura original para escritorios */
+  }
+
+  .imageHalf img {
+    object-position: 0; /* Restaura la posición de la imagen */
   }
 }
