@@ -60,27 +60,31 @@
   }
   
   @media (max-width: 480px) {
-    
     .comprar-curso-card {
       flex-direction: column; /* Apila los elementos verticalmente */
-      align-items: flex-start; /* Alinea los elementos a la izquierda */
+      align-items: center; /* Centra los elementos horizontalmente */
       padding: 10px; /* Reduce el padding */
-      background-color: white; /* Fondo blanco */
+      background-color: transparent; /* Elimina el fondo */
       width: 100%; /* Ocupa el 100% del ancho disponible */
       max-width: 100%; /* Evita que sobresalga de la pantalla */
       box-sizing: border-box; /* Incluye el padding en el ancho total */
       margin: 0 auto; /* Centra el contenedor si es necesario */
     }
-    
+  
     .comprar-curso-button {
-      width: 160px;
-      height: 30px; /* Reduce la altura del botón */
-      font-size: 10px; /* Reduce el tamaño de la fuente */
-      margin-left: auto; /* Empuja el botón a la derecha */
+      width: 80%; /* Hace el botón más largo (80% del ancho del contenedor) */
+      height: 40px; /* Aumenta la altura del botón */
+      font-size: 14px; /* Aumenta el tamaño de la fuente */
+      padding: 10px 20px; /* Ajusta el padding */
+      margin-top: 10px; /* Espacio superior para separarlo del texto */
+      border-radius: 8px; /* Ajusta el radio de las esquinas */
+      text-align: center; /* Centra el texto dentro del botón */
+      background-color: #FFCE76; /* Mantén el color de fondo del botón */
+      color: #011F3F; /* Mantén el color del texto del botón */
+      margin-left: 30px;
     }
-    
+  
     .toma-control {
-      font-size: 16px;
-      margin-right: auto; /* Empuja el texto a la izquierda */
+      display: none; /* Oculta el texto */
     }
   }

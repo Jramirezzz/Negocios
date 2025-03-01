@@ -152,41 +152,53 @@
     
     @media (max-width: 480px) {
       .cursos-container {
-        margin-left: 10px;
-        margin-right: 10px;
+        display: flex;
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+        margin-top: 20px; /* Reduce el margen superior */
+        margin-left: 10px; /* Reduce el margen izquierdo */
+        margin-right: 10px; /* Reduce el margen derecho */
       }
     
       .cursos-text {
-        margin-top: 10px;
+        margin-top: 18px; /* Reduce el margen superior */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        padding-right: 0; /* Elimina el padding derecho */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
       }
     
-      .extra-image {
-        display: none; /* Oculta la imagen en celular */
+      .cursos-text h3 {
+        font-size: 20px; /* Tamaño del título */
+        text-align: left; /* Alinea el título a la izquierda */
+        margin-bottom: 10px; /* Añade un margen inferior al título */
       }
     
       .cursos-text ul {
         margin: 0; /* Elimina el margen predeterminado */
         padding: 0; /* Elimina el padding predeterminado */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
       }
     
       .cursos-text li {
-        font-size: 14px; /* Reduce el tamaño de la fuente */
-        margin-bottom: 20px; /* Reduce el margen inferior */
+        font-size: 13px; /* Tamaño de la fuente */
+        margin-bottom: 10px; /* Reduce el margen inferior */
         display: flex;
         align-items: center; /* Alinea el ícono y el texto verticalmente */
+        margin-left: 0; /* Elimina el margen izquierdo */
       }
     
-      .cursos-text h3 {
-        font-size: 20px; /* Reduce el tamaño del título */
+      .cursos-text li img {
+        margin-right: 10px; /* Espacio entre el ícono y el texto */
       }
     
       .cursos-text button {
-        width: 120px; /* Reduce el ancho del botón */
-        height: 36px;
-        font-size: 12px;
-      }
-    
-      .cursos-image img {
-        display: none;
+        width: 120px; /* Ancho del botón */
+        height: 36px; /* Altura del botón */
+        font-size: 12px; /* Tamaño de la fuente */
+        margin-top: 15px; /* Reduce el margen superior */
+        align-self: flex-start; /* Alinea el botón a la izquierda */
       }
     }
