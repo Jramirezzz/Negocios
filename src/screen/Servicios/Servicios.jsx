@@ -57,7 +57,7 @@ export function Servicios () {
         <CardServices 
           title="¡Aprende a administrar tu salario como un experto!" 
           description="Ahorrar dinero no significa dejar de disfrutar, sino aprender a gestionar mejor tus ingresos. En este curso descubrirás cómo transformar tus hábitos financieros para construir un futuro estable y sin preocupaciones. Te ayudaremos a tomar el control de tu dinero, optimizar tus recursos y desarrollar una mentalidad financiera inteligente que te permitirá alcanzar tus metas sin sentir que sacrificas tu día a día." 
-          img="/public/Empresario.png"
+          img="./Empresario.png"
         />
       </div>
       <div>
@@ -73,7 +73,7 @@ export function Servicios () {
           title="En este curso "
           lista={listaCursos}
           button="Ver temerario"
-          img="/public/Video.png"
+          img="./Video.png"
         />
       </div>
 
@@ -83,19 +83,19 @@ export function Servicios () {
           subtitle="Descubre métodos prácticos para optimizar tus ingresos, reducir gastos innecesarios y construir un futuro financiero estable."
           button="Introducción a tus Finanzas"
           extraButton="Herramientas y recursos"
-          img1="/public/Line 2.png"
-          img2="/public/Line 3.png"
-          img3={"/public/award.png"}
-          img4="/public/book.png"
+          img1="./Line 2.png"
+          img2="./Line 3.png"
+          img3={"./award.png"}
+          img4="./book.png"
           lista1={listaContenido1}
         />
       </div>
 
       <div>
         <CardUsers
-          img1="/public/Line 4.png"
+          img1="./Line 4.png"
           title="Nuestros profesores son expertos en la industria "
-          img2="/public/Alexandra Murillo.png"
+          img2="./Alexandra Murillo.png"
           title2="Alexandra Murillo"
           subtitle="Economia y negocios internacionales"
         />
