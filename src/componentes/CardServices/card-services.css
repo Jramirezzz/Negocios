@@ -12,7 +12,6 @@
   font-style: normal;
 }
 
-
 .card-services {
     display: flex;
     align-items: center;
@@ -49,7 +48,6 @@
     max-width: 550px; 
     word-wrap: break-word; 
     line-height: 1.5; 
-
   }
   
   p {
@@ -61,5 +59,73 @@
     max-width: 550px; 
     word-wrap: break-word; 
     line-height: 1.5; 
+  }
+
+  /* Media Queries para responsive design */
+  @media (max-width: 768px) {
+    .card-services {
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   
+    .title-services {
+      font-size: 20px;
+      margin-top: 140px;
+      max-width: 350px;
+      word-wrap: break-word;
+      line-height: 1.5;
+      text-align: left; /* Alinear texto a la izquierda */
+      margin-left: 0; /* Eliminar margen izquierdo */
+      padding-left: 0; /* Eliminar padding izquierdo */
+    }
+  
+    p {
+      font-size: 14px;
+      max-width: 350px;
+      word-wrap: break-word;
+      line-height: 1.5;
+      text-align: left; /* Alinear texto a la izquierda */
+      margin-left: 0; /* Eliminar margen izquierdo */
+      padding-left: 0; /* Eliminar padding izquierdo */
+    }
+  
+    .custom-image {
+      width: 348.67px;
+      height: 472px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card-services {
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .title-services {
+      font-size: 20px;
+      margin-top: 140px;
+      max-width: 350px;
+      word-wrap: break-word;
+      line-height: 1.5;
+      text-align: left; /* Alinear texto a la izquierda */
+      margin-left: 0; /* Eliminar margen izquierdo */
+      padding-left: 0; /* Eliminar padding izquierdo */
+    }
+  
+    p {
+      font-size: 14px;
+      max-width: 350px;
+      word-wrap: break-word;
+      line-height: 1.5;
+      text-align: left; /* Alinear texto a la izquierda */
+      margin-left: 0; /* Eliminar margen izquierdo */
+      padding-left: 0; /* Eliminar padding izquierdo */
+    }
+  
+    .custom-image {
+      width: 348.67px;
+      height: 472px;
+    }
   }
