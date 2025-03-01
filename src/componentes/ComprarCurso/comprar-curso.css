@@ -43,3 +43,44 @@
   .comprar-curso-button:hover {
     background-color: #e6b85e; 
   }
+
+  @media (max-width: 768px) {
+    .comprar-curso-card {
+      flex-direction: column; /* Apila los elementos verticalmente */
+      align-items: flex-start; /* Alinea los elementos a la izquierda */
+      padding: 15px; /* Reduce el padding */
+    }
+  
+    .comprar-curso-button {
+      width: 100%; /* El botón ocupa el 100% del ancho */
+      height: 50px; /* Reduce la altura del botón */
+      font-size: 18px; /* Reduce el tamaño de la fuente */
+      margin-top: 10px; /* Añade un margen superior */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    
+    .comprar-curso-card {
+      flex-direction: column; /* Apila los elementos verticalmente */
+      align-items: flex-start; /* Alinea los elementos a la izquierda */
+      padding: 10px; /* Reduce el padding */
+      background-color: white; /* Fondo blanco */
+      width: 100%; /* Ocupa el 100% del ancho disponible */
+      max-width: 100%; /* Evita que sobresalga de la pantalla */
+      box-sizing: border-box; /* Incluye el padding en el ancho total */
+      margin: 0 auto; /* Centra el contenedor si es necesario */
+    }
+    
+    .comprar-curso-button {
+      width: 160px;
+      height: 30px; /* Reduce la altura del botón */
+      font-size: 10px; /* Reduce el tamaño de la fuente */
+      margin-left: auto; /* Empuja el botón a la derecha */
+    }
+    
+    .toma-control {
+      font-size: 16px;
+      margin-right: auto; /* Empuja el texto a la izquierda */
+    }
+  }

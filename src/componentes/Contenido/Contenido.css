@@ -200,3 +200,199 @@
   height: 26px; 
   margin-right: 10px; 
 }
+
+@media (max-width: 768px) {
+  .contenido-container h2 {
+    font-size: 32px; /* Reduce el tamaño del título */
+    margin-left: 20px; /* Reduce el margen izquierdo */
+  }
+
+  .contenido-container h3 {
+    font-size: 20px; /* Reduce el tamaño del subtítulo */
+    padding-right: 30%; /* Reduce el padding derecho */
+    margin-left: 20px; /* Reduce el margen izquierdo */
+  }
+
+  .contenido-container .button-container {
+    flex-direction: column; /* Apila los botones verticalmente */
+    gap: 10px; /* Reduce el espacio entre botones */
+    margin-left: 20px; /* Reduce el margen izquierdo */
+  }
+
+  .contenido-container .main-button,
+  .contenido-container .extra-button {
+    width: 100%; /* Los botones ocupan el 100% del ancho */
+  }
+
+  .contenido-container .imagenes-container {
+    margin-left: 20px; /* Reduce el margen izquierdo */
+  }
+
+  .contenido-container .linea-3 {
+    width: 80%; /* Reduce el ancho de la línea */
+  }
+
+  .contenido-container .list-item {
+    margin-left: 20px; /* Reduce el margen izquierdo */
+    padding: 15px; /* Reduce el padding */
+  }
+
+  .contenido-container .list-title {
+    font-size: 28px; /* Reduce el tamaño del título de la lista */
+  }
+
+  .contenido-container .list-text {
+    font-size: 16px; /* Reduce el tamaño del texto */
+    margin-left: 20px; /* Reduce el margen izquierdo */
+  }
+
+  .contenido-container .list-title2 {
+    font-size: 20px; /* Reduce el tamaño del título secundario */
+  }
+
+  .contenido-container .list-content li {
+    font-size: 16px; /* Reduce el tamaño de la fuente de los elementos de la lista */
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido-container {
+    margin-top: 60px;
+  }
+
+  .contenido-container h2 {
+    font-size: 20px; /* Tamaño del título */
+    margin-left: 10px; /* Margen izquierdo */
+    text-align: left; /* Alineación del título */
+  }
+
+  .contenido-container h3 {
+    font-size: 14px; /* Tamaño del subtítulo */
+    padding-right: 10%; /* Padding derecho */
+    margin-left: 10px; /* Margen izquierdo */
+    max-width: 350px; /* Ancho máximo del subtítulo */
+    word-wrap: break-word; /* Evita que el texto se desborde */
+    line-height: 1.5; /* Interlineado */
+    text-align: left; /* Alineación del subtítulo */
+  }
+
+  .contenido-container .button-container {
+    display: flex; /* Botones en una fila */
+    flex-direction: row; /* Dirección horizontal */
+    gap: 10px; /* Espacio entre botones */
+    margin-left: 10px; /* Margen izquierdo */
+    align-items: center; /* Alineación vertical */
+  }
+
+  .contenido-container .main-button,
+  .contenido-container .extra-button {
+    display: flex; /* Flexbox para centrar el texto */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    background-color: #ffce76; /* Color de fondo del botón principal */
+    color: #011f3f; /* Color del texto del botón principal */
+    border: 2px solid #011f3f; /* Borde del botón principal */
+    padding: 10px 20px; /* Padding interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    width: 150px; /* Ancho del botón principal */
+    height: 40px; /* Altura del botón principal */
+    font-size: 12px; /* Tamaño de la fuente */
+    border-radius: 30px; /* Bordes redondeados */
+    font-family: 'Codec Cold', sans-serif; /* Fuente */
+    margin-top: 20px; /* Margen superior */
+    flex-shrink: 0; /* Evita que el botón se encoja */
+    text-align: center; /* Centrado del texto */
+  }
+
+  .contenido-container .extra-button {
+    background-color: rgba(192, 192, 192, 0.46); /* Color de fondo del botón secundario */
+    color: white; /* Color del texto del botón secundario */
+    border: 2px solid rgba(192, 192, 192, 0.46); /* Borde del botón secundario */
+    width: 120px; /* Ancho del botón secundario */
+  }
+
+  .contenido-container .imagenes-container {
+    margin-left: 10px; /* Margen izquierdo */
+  }
+
+  .contenido-container .linea-3 {
+    width: 18%; /* Ancho de la línea */
+  }
+
+  .contenido-container .list-item {
+    margin-left: 10px; /* Margen izquierdo */
+    margin-right: 10px; /* Margen derecho */
+    padding: 10px; /* Padding interno */
+    background-color: rgba(89, 105, 122, 0.11); /* Color de fondo */
+    border-radius: 30px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la lista */
+    transition: padding 0.3s ease; /* Transición suave */
+    width: calc(100% - 20px); /* Ajusta el ancho para que no se desborde */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+
+  .contenido-container .list-item.collapsed {
+    padding: 10px; /* Padding cuando la lista está colapsada */
+  }
+
+  .contenido-container .list-header {
+    display: flex; /* Flexbox para alinear ícono y texto */
+    align-items: center; /* Centrado vertical */
+    gap: 10px; /* Espacio entre ícono y texto */
+  }
+
+  .contenido-container .list-icon {
+    width: 20px; /* Ancho del ícono (reducido en un 70%) */
+    height: 20px; /* Altura del ícono (reducido en un 70%) */
+  }
+
+  .contenido-container .list-title {
+    font-size: 14px; /* Tamaño del título de la lista (reducido en un 70%) */
+    font-weight: bold; /* Negrita */
+    color: white; /* Color del texto */
+  }
+
+  .contenido-container .list-subtitle {
+    font-size: 12px; /* Tamaño del subtítulo de la lista (reducido en un 70%) */
+    font-weight: normal; /* Peso normal */
+    color: white; /* Color del texto */
+    margin-top: -15px; /* Ajuste del margen superior */
+  }
+
+  .contenido-container .list-details {
+    display: flex; /* Flexbox para alinear detalles */
+    flex-direction: column; /* Dirección vertical */
+    gap: 10px; /* Espacio entre elementos */
+  }
+
+  .contenido-container .list-text {
+    font-size: 12px; /* Tamaño del texto (reducido en un 70%) */
+    color: white; /* Color del texto */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    padding-left: 0; /* Elimina el padding izquierdo */
+    text-align: left; /* Alineación del texto */
+      max-width: 520px; /* Ancho máximo del subtítulo */
+      word-wrap: break-word; /* Evita que el texto se desborde */
+      line-height: 1.5; /* Interlineado */
+  }
+
+  .contenido-container .list-title2 {
+    font-size: 14px; /* Tamaño del título secundario (reducido en un 70%) */
+    font-weight: bold; /* Negrita */
+    color: white; /* Color del texto */
+    margin-top: 10px; /* Margen superior */
+  }
+
+  .contenido-container .list-content li {
+    font-size: 12px; /* Tamaño de la fuente de los elementos de la lista (reducido en un 70%) */
+    display: flex; /* Flexbox para alinear ícono y texto */
+    align-items: center; /* Centrado vertical */
+    margin-bottom: 5px; /* Margen inferior */
+  }
+
+  .contenido-container .check-icon {
+    width: 16px; /* Ancho del ícono (reducido en un 70%) */
+    height: 16px; /* Altura del ícono (reducido en un 70%) */
+    margin-right: 5px; /* Margen derecho */
+  }
+}

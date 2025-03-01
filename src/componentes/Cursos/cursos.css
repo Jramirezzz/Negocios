@@ -1,110 +1,192 @@
-@font-face {
-  font-family: 'Codec Cold';
-  src: url('/assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Codec Cold';
+    src: url('/assets/fonts/Codec-Cold-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: 'Codec Cold';
-  src: url('/assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-.cursos-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-left: 40px;  
+  @font-face {
+    font-family: 'Codec Cold';
+    src: url('/assets/fonts/Codec-Cold-Bold-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
   }
-  
-  .cursos-text {
-    flex: 1;
-    padding-right: 20px; 
-    font-family: 'Codec Cold', sans-serif;
-    margin-top: 40px;
-    margin-left: 40px;
-  }
-  
-  .cursos-content {
-    display: flex;
-    align-items: flex-start;
+  .cursos-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 40px;
+      margin-left: 40px;  
+    }
     
-  }
-  
-  .extra-image {
-    margin-top: 20px;
-    width: 2.2px; 
-    height: auto; 
-    margin-right: 10px; 
-  }
-  
-  .cursos-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end; 
-    align-items: flex-start;
-  }
-  
-  .cursos-image img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .check-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .cursos-text ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .cursos-text li {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 40px; 
-    color: white;
-    font-size: 20px;
-    margin-left: 30px;
-  }
-  
-  .cursos-text li img {
-    margin-right: 10px; 
-  }
-  
-  .cursos-text h3 {
-    font-size: 24px; 
-    color: white; 
-    text-align: left;
-  }
-  
-  .cursos-text h3 span {
-    color: #FFCE76; 
-  }
+    .cursos-text {
+      flex: 1;
+      padding-right: 20px; 
+      font-family: 'Codec Cold', sans-serif;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+    
+    .cursos-content {
+      display: flex;
+      align-items: flex-start;
+      
+    }
+    
+    .extra-image {
+      margin-top: 20px;
+      width: 2.2px; 
+      height: auto; 
+      margin-right: 10px; 
+    }
+    
+    .cursos-image {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end; 
+      align-items: flex-start;
+    }
+    
+    .cursos-image img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .check-icon {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .cursos-text ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .cursos-text li {
+      display: flex;
+      align-items: center; 
+      margin-bottom: 40px; 
+      color: white;
+      font-size: 20px;
+      margin-left: 30px;
+    }
+    
+    .cursos-text li img {
+      margin-right: 10px; 
+    }
+    
+    .cursos-text h3 {
+      font-size: 24px; 
+      color: white; 
+      text-align: left;
+    }
+    
+    .cursos-text h3 span {
+      color: #FFCE76; 
+    }
 
-  .button-container {
-    display: flex;
-    justify-content: flex-start; 
-    width: 100%; 
-  }
-  
-  .cursos-text button {
-    background-color: #FFCE76; 
-    color: #011F3F; 
-    border: 2px solid #011F3F; 
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 160px; 
-    height: 42px; 
-    font-size: 16px; 
-    border-radius: 30px; 
-    font-family: 'Codec Cold', sans-serif; 
-    margin-top: 20px; 
-  }
-  
-  .cursos-text button:hover {
-    background-color: #e6b85e; 
-  }
+    .button-container {
+      display: flex;
+      justify-content: flex-start; 
+      width: 100%; 
+    }
+    
+    .cursos-text button {
+      background-color: #FFCE76; 
+      color: #011F3F; 
+      border: 2px solid #011F3F; 
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 160px; 
+      height: 42px; 
+      font-size: 16px; 
+      border-radius: 30px; 
+      font-family: 'Codec Cold', sans-serif; 
+      margin-top: 20px; 
+    }
+    
+    .cursos-text button:hover {
+      background-color: #e6b85e; 
+    }
+
+    @media (max-width: 768px) {
+      .cursos-container {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    
+      .cursos-text {
+        margin-top: 20px;
+      }
+    
+      .extra-image {
+        display: none; /* Oculta la imagen en tablets */
+      }
+    
+      .cursos-text ul {
+        margin: 0; /* Elimina el margen predeterminado */
+        padding: 0; /* Elimina el padding predeterminado */
+      }
+    
+      .cursos-text li {
+        font-size: 16px; /* Tamaño de fuente ligeramente más grande que en móviles */
+        margin-bottom: 20px; /* Reduce el margen inferior */
+        display: flex;
+        align-items: center; /* Alinea el ícono y el texto verticalmente */
+      }
+    
+      .cursos-text h3 {
+        font-size: 22px; /* Tamaño de título ligeramente más grande que en móviles */
+      }
+    
+      .cursos-text button {
+        width: 140px; /* Ancho del botón ligeramente más grande que en móviles */
+        height: 38px;
+        font-size: 14px; /* Tamaño de fuente ligeramente más grande que en móviles */
+      }
+    
+      .cursos-image img {
+        display: none; /* Oculta la imagen en tablets */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .cursos-container {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    
+      .cursos-text {
+        margin-top: 10px;
+      }
+    
+      .extra-image {
+        display: none; /* Oculta la imagen en celular */
+      }
+    
+      .cursos-text ul {
+        margin: 0; /* Elimina el margen predeterminado */
+        padding: 0; /* Elimina el padding predeterminado */
+      }
+    
+      .cursos-text li {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+        margin-bottom: 20px; /* Reduce el margen inferior */
+        display: flex;
+        align-items: center; /* Alinea el ícono y el texto verticalmente */
+      }
+    
+      .cursos-text h3 {
+        font-size: 20px; /* Reduce el tamaño del título */
+      }
+    
+      .cursos-text button {
+        width: 120px; /* Reduce el ancho del botón */
+        height: 36px;
+        font-size: 12px;
+      }
+    
+      .cursos-image img {
+        display: none;
+      }
+    }
