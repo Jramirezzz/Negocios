@@ -54,7 +54,7 @@ export function Home() {
   return (
     <div>
         <section className="header">
-            <h1 className="title">FINTEACH</h1>
+            <h1 className="title-2">FINTEACH</h1>
             <h3 className="slogan">Domina tus finanzas,transforma tu futuro</h3>
        </section>
 
