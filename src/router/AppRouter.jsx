@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import {Navbar} from '../componentes/index';
+import {Navbar,Footer} from '../componentes/index';
 import {Home, Servicios, Registrate} from '../screen/index';
 
 const AppRouter = () => {
@@ -11,6 +11,7 @@ const AppRouter = () => {
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/registrate" element={<Registrate />} />
       </Routes>
+      <Footer/>
       </>
   );
 };

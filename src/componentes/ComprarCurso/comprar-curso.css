@@ -16,14 +16,15 @@
     background-color: white; 
     color: black; 
     padding: 20px;
-    display: flex;
-    align-items: center;
     justify-content: space-between; 
     margin-top: 40px;
     margin-left: 0;
     font-family: 'Codec Cold', sans-serif;
-    font-weight: bold;
+    font-weight: bold;  
+    display: flex;
+    align-items: center;
   }
+
   
   .comprar-curso-button {
     background-color: #FFCE76; 
