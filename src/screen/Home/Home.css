@@ -1,19 +1,19 @@
-
- .title-2{
+/* Estilos base */
+.title-2 {
     margin-top: 3%;
     text-align: center;
     margin-bottom: 0;
     font-size: 5rem;
- }
- .slogan{
+}
+
+.slogan {
     text-align: center;
     margin-top: 0;
     color: #ffffff;
     font-size: 2rem;
- }
-  
-  
- .about {
+}
+
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,6 @@
     font-size: 1rem;
     color: black;
     margin-bottom: 2rem;
-    
 }
 
 .imageContent-1 {
@@ -81,19 +80,20 @@ Button:hover {
     text-align: center;
     margin-top: 5%;
 }
-.first-part{
+
+.first-part {
     color: #00fdf9;
     margin-right: 10px;
     font-weight: bold;
 }
-.second-part{
+
+.second-part {
     color: white;
     font-weight: bold;
 }
 
 .financialSection-2 {
     padding: 2rem;
-    
 }
 
 .financialContent-2 {
@@ -101,7 +101,7 @@ Button:hover {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 2rem; 
+    gap: 2rem;
 }
 
 .textContent-2 {
@@ -111,13 +111,14 @@ Button:hover {
     flex: 1;
 }
 
-.first-part-2{
+.first-part-2 {
     color: #00fdf9;
     margin-right: 10px;
     font-weight: bold;
     font-size: 1.8rem;
 }
-.second-part-2{
+
+.second-part-2 {
     color: white;
     font-weight: bold;
     font-size: 1.8rem;
@@ -134,25 +135,27 @@ Button:hover {
     border-radius: 10px;
 }
 
-.cards-container{
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
 }
-.aboutTitle-3{
+
+.aboutTitle-3 {
     font-size: 2rem;
     color: #000000;
     margin-bottom: 1rem;
     text-align: start;
 }
-.aboutDescription-3{
+
+.aboutDescription-3 {
     font-size: 1rem;
     color: black;
     margin-bottom: 2rem;
-
 }
+
 .about-3 {
     display: flex;
     justify-content: center;
@@ -163,9 +166,82 @@ Button:hover {
     margin-top: 5%;
 }
 
-.subtitle-2{
+.subtitle-2 {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin-top: 5%;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 767px) {
+    .title-2 {
+        font-size: 3rem; 
+    }
+
+    .slogan {
+        font-size: 1.5rem; 
+    }
+
+    .aboutContent {
+        flex-direction: column; 
+    }
+
+    .textContent {
+        padding-left: 0;
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .imageContent-1 img {
+        display: none;
+        margin-top: 50px;
+    }
+
+    .financialContent-2 {
+        flex-direction: column; 
+    }
+
+    .imageContent-2 img {
+        display: none;
+    }
+
+    .cards-container {
+        flex-direction: column; 
+    }
+
+    .subtitle-2 {
+        font-size: 2rem; 
+    }
+    .card{
+        max-width: 70%;
+    }
+}
+
+/* Media Queries para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .title-2 {
+        font-size: 4rem; 
+    }
+
+    .slogan {
+        font-size: 1.75rem; 
+    }
+
+    .aboutContent {
+        flex-direction: row; 
+    }
+
+    .financialContent-2 {
+        flex-direction: row; 
+    }
+
+    .cards-container {
+        flex-direction: row;
+    }
+}
+
+/* Media Queries para escritorios */
+@media (min-width: 1024px) {
+    /* No se necesitan cambios adicionales, los estilos base ya son para escritorio */
 }
