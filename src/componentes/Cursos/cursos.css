@@ -111,42 +111,53 @@
 
     @media (max-width: 768px) {
       .cursos-container {
-        margin-left: 20px;
-        margin-right: 20px;
+        display: flex;
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+        margin-top: 30px; /* Aumenta el margen superior */
+        margin-left: 20px; /* Aumenta el margen izquierdo */
+        margin-right: 20px; /* Aumenta el margen derecho */
       }
     
       .cursos-text {
-        margin-top: 20px;
+        margin-top: 25px; /* Aumenta el margen superior */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        padding-right: 0; /* Elimina el padding derecho */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
       }
     
-      .extra-image {
-        display: none; /* Oculta la imagen en tablets */
+      .cursos-text h3 {
+        font-size: 24px; /* Aumenta el tamaño del título */
+        text-align: left; /* Alinea el título a la izquierda */
+        margin-bottom: 15px; /* Aumenta el margen inferior al título */
       }
     
       .cursos-text ul {
         margin: 0; /* Elimina el margen predeterminado */
         padding: 0; /* Elimina el padding predeterminado */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
       }
     
       .cursos-text li {
-        font-size: 16px; /* Tamaño de fuente ligeramente más grande que en móviles */
-        margin-bottom: 20px; /* Reduce el margen inferior */
+        font-size: 16px; /* Aumenta el tamaño de la fuente */
+        margin-bottom: 15px; /* Aumenta el margen inferior */
         display: flex;
         align-items: center; /* Alinea el ícono y el texto verticalmente */
+        margin-left: 0; /* Elimina el margen izquierdo */
       }
     
-      .cursos-text h3 {
-        font-size: 22px; /* Tamaño de título ligeramente más grande que en móviles */
+      .cursos-text li img {
+        margin-right: 15px; /* Aumenta el espacio entre el ícono y el texto */
       }
     
       .cursos-text button {
-        width: 140px; /* Ancho del botón ligeramente más grande que en móviles */
-        height: 38px;
-        font-size: 14px; /* Tamaño de fuente ligeramente más grande que en móviles */
-      }
-    
-      .cursos-image img {
-        display: none; /* Oculta la imagen en tablets */
+        width: 150px; /* Aumenta el ancho del botón */
+        height: 40px; /* Aumenta la altura del botón */
+        font-size: 14px; /* Aumenta el tamaño de la fuente */
+        margin-top: 20px; /* Aumenta el margen superior */
+        align-self: flex-start; /* Alinea el botón a la izquierda */
       }
     }
     
