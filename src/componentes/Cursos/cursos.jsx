@@ -10,7 +10,7 @@ export function Cursos({ title, lista, button, img, extraImg }) {
                 <ul>
                   {lista && lista.map((item, index) => (
                     <li key={index}>
-                      <img className="check-icon" src="/public/Check.png" alt="check" /> {item}
+                      <img className="check-icon" src="./Check.png" alt="check" /> {item}
                     </li>
                   ))}
                 </ul>
