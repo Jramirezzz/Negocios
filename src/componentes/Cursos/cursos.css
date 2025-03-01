@@ -127,6 +127,14 @@
         white-space: nowrap; /* Evita que el texto se divida en varias líneas */
         text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
       }
+
+      .cursos-image {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end; 
+        align-items: flex-start;
+        display: none;
+      }
     
       .cursos-text h3 {
         font-size: 24px; /* Aumenta el tamaño del título */
@@ -159,6 +167,14 @@
         margin-top: 20px; /* Aumenta el margen superior */
         align-self: flex-start; /* Alinea el botón a la izquierda */
       }
+
+      .extra-image {
+        margin-top: 20px;
+        width: 2.2px; 
+        height: auto; 
+        margin-right: 10px; 
+        display: none;
+      }
     }
     
     @media (max-width: 480px) {
@@ -169,6 +185,22 @@
         margin-top: 20px; /* Reduce el margen superior */
         margin-left: 10px; /* Reduce el margen izquierdo */
         margin-right: 10px; /* Reduce el margen derecho */
+      }
+
+      .extra-image {
+        margin-top: 20px;
+        width: 2.2px; 
+        height: auto; 
+        margin-right: 10px; 
+        display: none;
+      }
+
+      .cursos-image {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end; 
+        align-items: flex-start;
+        display: none;
       }
     
       .cursos-text {

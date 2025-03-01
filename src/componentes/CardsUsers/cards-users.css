@@ -182,7 +182,6 @@
       line-height: 1.5;
     }
   }
-  
   @media (max-width: 480px) {
     .card-users-container {
       display: flex;
