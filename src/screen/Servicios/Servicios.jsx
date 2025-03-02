@@ -72,7 +72,7 @@ export function Servicios () {
           extraImg="./Line.png"
           title="En este curso "
           lista={listaCursos}
-          button="Ver temerario"
+          button="Ver temario"
           img="./Video.png"
         />
       </div>
