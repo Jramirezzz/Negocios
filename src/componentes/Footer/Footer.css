@@ -101,3 +101,48 @@ margin-top: 40px; /* Aumenta el margen superior */
 .footer-social{
     margin-top: 10px;
 }
+
+/* Estilos para pantallas de 480px o menos */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px; /* Reducir el padding general */
+    padding-bottom: 30px; /* Reducir el padding inferior */
+  }
+
+  .footerLogo {
+    text-align: center; /* Centrar el logo en móviles */
+  }
+
+  .footer-logo-img {
+    width: 200px; /* Reducir el tamaño del logo */
+    height: auto; /* Mantener la proporción */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Cambiar a una columna */
+    align-items: center; /* Centrar todo el contenido */
+    gap: 20px; /* Espacio entre secciones */
+  }
+
+  .footer-section {
+    text-align: center; /* Centrar el texto en móviles */
+    margin: 0; /* Eliminar márgenes laterales */
+  }
+
+  .contact-section h3 {
+    text-align: center; /* Centrar el título "Contáctanos" */
+  }
+
+  .contact-info {
+    align-items: center; /* Centrar los elementos de contacto */
+  }
+
+  .contact-item {
+    flex-direction: column; /* Apilar icono y texto */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .footer-section ul {
+    text-align: center; /* Centrar el texto de la lista */
+  }
+}
