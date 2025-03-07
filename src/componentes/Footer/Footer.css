@@ -1,5 +1,148 @@
-.logo-footer {
-    display: flex;
-    width: 100%;
-    
+.footer {
+  display: flex;
+  flex-direction: column; /* Coloca todo en una columna */
+  padding: 20px;
+  padding-bottom: 40px; /* Aumenta el padding inferior */
+  background-color: #1A1A1A; /* Fondo oscuro */
+  border-top: 1px solid #333; /* Borde superior más oscuro */
+  font-family: Arial, sans-serif;
+  color: #FFFFFF; /* Color de texto blanco */
+}
+
+.footerLogo {
+  text-align: left; /* Alinea el logo a la izquierda */
+}
+
+.footer-logo-img {
+margin-top: 40px; /* Aumenta el margen superior */
+  width: 300px; /* Tamaño del logo */
+  height: 78px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Distribuye las secciones */
+  margin-top: 20px; /* Espacio entre el logo y el contenido */
+  margin-bottom: 50px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+  text-align: left; /* Alinea todo el texto a la izquierda */
+}
+
+.contact-section {
+  flex: 1; /* Asegura que "Contáctanos" esté a la izquierda */
+}
+
+.contact-section h3 {
+    margin-top: 40px;
+  text-align: left; /* Alinea el título "Contáctanos" a la izquierda */
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #FFFFFF; /* Texto blanco */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px; /* Aumenta el ancho máximo */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #FFFFFF; /* Texto blanco */
+  line-height: 1.5; /* Espaciado entre líneas */
+  word-wrap: break-word; /* Asegura que el texto se ajuste */
+}
+
+.contact-icon {
+  width: 29px; /* Tamaño del icono de "Contáctanos" */
+  height: 29px;
+  filter: brightness(0) invert(1); /* Convierte los iconos en blanco */
+}
+
+.tracking-icon {
+  width: 35px; /* Tamaño del icono de "tracking" */
+  height: 35px;
+  filter: brightness(0) invert(1); /* Convierte los iconos en blanco */
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #FFFFFF; /* Texto blanco */
+  line-height: 1.5; /* Espaciado entre líneas */
+  word-wrap: break-word; /* Asegura que el texto se ajuste */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: left; /* Alinea el texto de la lista a la izquierda */
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #FFFFFF; /* Texto blanco */
+}
+
+.footer-section ul li:hover {
+  color: #007bff; /* Cambia el color al pasar el mouse */
+  cursor: pointer;
+}
+
+.footer-social{
+    margin-top: 10px;
+}
+
+/* Estilos para pantallas de 480px o menos */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px; /* Reducir el padding general */
+    padding-bottom: 30px; /* Reducir el padding inferior */
+  }
+
+  .footerLogo {
+    text-align: center; /* Centrar el logo en móviles */
+  }
+
+  .footer-logo-img {
+    width: 200px; /* Reducir el tamaño del logo */
+    height: auto; /* Mantener la proporción */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Cambiar a una columna */
+    align-items: center; /* Centrar todo el contenido */
+    gap: 20px; /* Espacio entre secciones */
+  }
+
+  .footer-section {
+    text-align: center; /* Centrar el texto en móviles */
+    margin: 0; /* Eliminar márgenes laterales */
+  }
+
+  .contact-section h3 {
+    text-align: center; /* Centrar el título "Contáctanos" */
+  }
+
+  .contact-info {
+    align-items: center; /* Centrar los elementos de contacto */
+  }
+
+  .contact-item {
+    flex-direction: column; /* Apilar icono y texto */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .footer-section ul {
+    text-align: center; /* Centrar el texto de la lista */
+  }
 }

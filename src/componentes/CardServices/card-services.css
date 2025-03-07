@@ -72,9 +72,9 @@
     .title-services {
       font-size: 24px; /* Aumenta el tamaño de la fuente */
       margin-top: 120px; /* Reduce el margen superior */
-      max-width: 600px; /* Aumenta el ancho máximo */
-      word-wrap: break-word; /* Asegura que el texto se ajuste */
-      line-height: 1.5; /* Mantén el interlineado */
+        max-width: 600px; /* Aumenta el ancho máximo */
+        word-wrap: break-word; /* Asegura que el texto se ajuste */
+        line-height: 1.5; /* Mantén el interlineado */
       text-align: left; /* Alinea el texto a la izquierda */
       margin-left: 0; /* Elimina el margen izquierdo */
       padding-left: 0; /* Elimina el padding izquierdo */
