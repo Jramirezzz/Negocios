@@ -10,10 +10,7 @@ export function Navbar () {
       </div>
       <ul className="navbarLinks">
         <li>
-          <Link to="/" className='link'>Inicio</Link>
-        </li>
-        <li>
-          <Link to="/servicios" className="link">Servicios</Link>
+          <Link to="/" className="link">Servicios</Link>
         </li>
         <li>
           <Link to="/registrate" className="link-Registrate">Registrate</Link>
