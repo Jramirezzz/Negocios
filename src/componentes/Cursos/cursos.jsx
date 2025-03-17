@@ -21,7 +21,7 @@ export function Cursos({ title, lista, button, img, extraImg }) {
             </div>
           </div>
           <div className="cursos-image">
-            <img src= "./video-image.jpg" alt="imagen" />
+            <img src= "./video-image.jpg" alt="imagen" className="image-curso" />
           </div>
         </div>
       );

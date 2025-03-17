@@ -32,6 +32,10 @@
       align-items: flex-start;
       
     }
+
+    .image-curso{
+      border-radius: 20px;
+    }
     
     .extra-image {
       margin-top: 20px;
