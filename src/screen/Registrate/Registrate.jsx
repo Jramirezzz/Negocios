@@ -56,7 +56,7 @@ export function Registrate() {
   return (
     <section className="formSection">
       <div className="imageHalf">
-        <img src="./Register.png" alt="Imagen descriptiva" />
+        <img src="./Register-image.jpg" alt="Imagen descriptiva" />
       </div>
       <div className="formHalf">
         <h2>Regístrate</h2>
