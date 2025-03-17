@@ -73,7 +73,7 @@ export function Servicios () {
           title="En este curso "
           lista={listaCursos}
           button="Ver temario"
-          img="./Video.png"
+          img="./video-image.png"
         />
       </div>
 
