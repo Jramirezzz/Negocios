@@ -5,7 +5,7 @@ import { db, analytics } from "../../Firebase/firebase";
 import { collection, addDoc } from "firebase/firestore";
 
 export function Registrate() {
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     logEvent(analytics, "screen_view", {
@@ -46,12 +46,14 @@ export function Registrate() {
       // Vaciar los campos del formulario
       e.target.reset();
 
-      // Mostrar mensaje de agradecimiento
-      setFormSubmitted(true);
+      // Mostrar popup
+      setShowPopup(true);
 
+      // Cerrar popup después de 5 segundos
       setTimeout(() => {
-        setFormSubmitted(false);
-      }, 5000); // Ocultar mensaje después de 5 segundos
+        setShowPopup(false);
+      }, 5000);
+      
     } catch (error) {
       console.error("Error al guardar el documento:", error);
       alert("Hubo un error al guardar el registro.");
@@ -65,7 +67,6 @@ export function Registrate() {
       </div>
       <div className="formHalf">
         <h2>Regístrate</h2>
-        {formSubmitted && <p className="successMessage">¡Gracias por hacer el pre registro! Estaremos en contacto contigo.</p>}
         <form onSubmit={handleSubmit}>
           <div className="formGroup">
             <label htmlFor="name">Nombre:</label>
@@ -86,6 +87,17 @@ export function Registrate() {
           <button type="submit">Enviar</button>
         </form>
       </div>
+
+      {/* Popup Modal */}
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <h3>¡Gracias por registrarte!</h3>
+            <p>Estaremos en contacto contigo pronto.</p>
+            <button onClick={() => setShowPopup(false)}>Cerrar</button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
