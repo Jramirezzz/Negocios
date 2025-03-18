@@ -63,7 +63,7 @@ export function Servicios () {
       <div>
         <ComprarCursos
           title="Toma el control de tu salario y construye tu futuro financiero"
-          button="COMPRAR EL CURSO"
+          button="Obtener mas información"
         />
       </div>
 

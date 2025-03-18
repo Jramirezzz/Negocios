@@ -13,7 +13,7 @@ export function Navbar () {
           <Link to="/" className="link">Servicios</Link>
         </li>
         <li>
-          <Link to="/registrate" className="link-Registrate">Registrate</Link>
+          <Link to="/registrate" className="link-Registrate">Pre-Registrate</Link>
         </li>
       </ul>
     </nav>

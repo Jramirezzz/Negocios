@@ -1,26 +1,26 @@
 import "./Registrate.css";
-import { logEvent} from "firebase/analytics";
-import { useEffect } from "react";
-import { db,analytics } from "../../Firebase/firebase"; // Importa Firestore
+import { logEvent } from "firebase/analytics";
+import { useEffect, useState } from "react";
+import { db, analytics } from "../../Firebase/firebase";
 import { collection, addDoc } from "firebase/firestore";
 
 export function Registrate() {
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
   useEffect(() => {
-    // Registra un evento de vista de pantalla
-    logEvent(analytics, 'screen_view', {
-      firebase_screen: "Registrate", // Nombre de la pantalla
-      firebase_screen_class: "RegsitrateScreen", // Clase de la pantalla (opcional)
+    logEvent(analytics, "screen_view", {
+      firebase_screen: "Registrate",
+      firebase_screen_class: "RegistrateScreen",
     });
   }, []);
 
   useEffect(() => {
-    const startTime = Date.now(); // Registra el tiempo de inicio
+    const startTime = Date.now();
 
     return () => {
-      const endTime = Date.now(); // Registra el tiempo de salida
-      const timeSpent = (endTime - startTime) / 1000; // Calcula el tiempo en segundos
+      const endTime = Date.now();
+      const timeSpent = (endTime - startTime) / 1000;
 
-      // Rastrea el tiempo de permanencia en la página
       logEvent(analytics, "tiempo_pagina", {
         pagina: "Registrate",
         tiempo_segundos: timeSpent,
@@ -28,12 +28,9 @@ export function Registrate() {
     };
   }, []);
 
-  
-
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Evita que el formulario se envíe automáticamente
+    e.preventDefault();
 
-    // Obtén los datos del formulario
     const formData = new FormData(e.target);
     const data = {
       nombre: formData.get("name"),
@@ -43,10 +40,18 @@ export function Registrate() {
     };
 
     try {
-      // Guarda los datos en Firestore
       const docRef = await addDoc(collection(db, "registros"), data);
       console.log("Documento guardado con ID:", docRef.id);
-      alert("¡Registro exitoso!");
+      
+      // Vaciar los campos del formulario
+      e.target.reset();
+
+      // Mostrar mensaje de agradecimiento
+      setFormSubmitted(true);
+
+      setTimeout(() => {
+        setFormSubmitted(false);
+      }, 5000); // Ocultar mensaje después de 5 segundos
     } catch (error) {
       console.error("Error al guardar el documento:", error);
       alert("Hubo un error al guardar el registro.");
@@ -60,6 +65,7 @@ export function Registrate() {
       </div>
       <div className="formHalf">
         <h2>Regístrate</h2>
+        {formSubmitted && <p className="successMessage">¡Gracias por hacer el pre registro! Estaremos en contacto contigo.</p>}
         <form onSubmit={handleSubmit}>
           <div className="formGroup">
             <label htmlFor="name">Nombre:</label>
